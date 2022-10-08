@@ -121,6 +121,7 @@ const Container = styled.div`
       //animation-delay: 5s;
 
       span{
+         font-family: 'sans serif';
          padding: 8px 5px 0 5px;
          white-space: nowrap;
          display: inline-block;
