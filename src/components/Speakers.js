@@ -78,12 +78,16 @@ const Container = styled.div`
                      width: 100%;
                      height: 100%;
                      border-radius: 5px;
+                     object-fit: cover;
+                     object-position: center;
                   }
                }
+
                p{
-                  font-size: 16px;
+                  font-size: 18px;
                   text-align: center;
                   text-transform: capitalize;
+                  font-family: sans;
                }
             }
 

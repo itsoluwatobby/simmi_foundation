@@ -39,14 +39,14 @@ const Footer = () => {
 
            {/* QUESTIONS */}
           <div className="questions">
-            <p className='title'>Have Questions?</p>
+            <p className='title'>Have Questions ?</p>
             <div className="location">
               <MdLocationOn style={{fontSize: '30px'}}/>
               <p>479, Baspadamka, Tehsil Pataudi, Gurugram, Haryana - 122503, India</p>
             </div>
             <div className="phone">
               <HiPhone style={{fontSize: '24px'}}/>
-              <a href="tel(+91) 70152 - 95025">(+91) 70152 - 95025</a>
+              <a href="tel:+917015295025">(+91) 70152 - 95025</a>
             </div>
             <div className="email">
               <MdEmail style={{fontSize: '24px'}}/>
@@ -86,7 +86,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2.4rem;
-  padding: 3.5rem 6rem 2rem 1rem;
+  padding: 3.5rem 6rem 1.5rem 1rem;
 
   .container{
     display: flex;
@@ -151,7 +151,7 @@ const Container = styled.div`
           place-content: center;
           box-shadow: -2pxx 4px 15px rgba(0,0,0,0.3);
           color: gray;
-          
+
           &:hover{
             color: #ed820e;
           }
@@ -244,7 +244,7 @@ const Container = styled.div`
       p{
         color: lightgray;
         line-height: 1.4rem;
-        font-size: 17px;
+        font-size: 16px;
         cursor: pointer;
 
         &:hover{
@@ -300,12 +300,13 @@ const Container = styled.div`
 
   .footer{
     margin-top: 2rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-center;
     align-items: center;
     color: lightgray;
-    font-size: 16px;
+    font-size: 14px;
     gap: 0.5rem;
 
     .images{
@@ -327,11 +328,12 @@ const Container = styled.div`
 
     .copyright{
       margin-top: 1.5rem;
-      font-size: 16px;
+      font-size: 13px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.2rem;
+      gap: 0.1rem;
     }
   }
 `

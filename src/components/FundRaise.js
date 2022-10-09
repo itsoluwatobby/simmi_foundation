@@ -94,17 +94,19 @@ const Container = styled.div`
 
          .inner-container{
             width: 100%;
-            height: 400px;
+            height: 350px;
             margin-bottom: 0;
 
             img{
                width: 100%;
                height: 100%;
+               object-fit: cover;
+               object-position: center;
             }
          }
 
          .content{
-            margin-top: 0;
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify: space-between;

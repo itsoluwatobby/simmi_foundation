@@ -15,7 +15,7 @@ const Middle = () => {
                   </div>
                   <div className='content'>
                      <h2>{obj.title}</h2>
-                     <p>{obj.text}</p>
+                     <p className='text'>{obj.text}</p>
                      <div className="link">
                         <p>Read more</p>
                         <IoMdArrowRoundForward />
@@ -57,18 +57,20 @@ const Container = styled.div`
          justify-content: space-between;
          align-items: center;
          width: 260px;
-         height: 400px;
+         height: 420px;
          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 
          @media (max-width: 1024px){
             width: 480px;
-            height: 550px;
+            height: 520px;
          }
 
          .inner-container{
             width: 100%;
-            height: 320px;
+            height: 200px;
+            margin-bottom: 0;
             box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.4s ease-in-out;
 
             img{
                width: 100%;
@@ -77,18 +79,22 @@ const Container = styled.div`
                object-position: center;
             }
 
-            &:hover{
-               opacity: 0.6;
+            @media (max-width: 1024px){
+               height: 320px;
             }
          }
 
          .content{
+            flex: 1;
             display: flex;
+            position: relative;
             flex-direction: column;
             justify: space-between;
             gap: 1.5rem;
             align-items: center;
             padding: 2rem;
+            margin-top: 0;
+            transition: all 0.4s ease-in-out;
 
             h2{
                font-size: 16px;
@@ -108,18 +114,22 @@ const Container = styled.div`
                display: block;
                text-align: center;
                line-height: 1.2rem;
+               
             }
 
             .link{
                font-size: 26px;
                display: flex;
                justify-content: flex-end;
-               width: 100%;
+               width: 160px;
                padding: 0 20px 10px 0;
                margin-top: 0;
                align-items: center;
                font-family: 'sans';
                cursor: pointer;
+               position: absolute;
+               right: 5px;
+               bottom: 5px;
               
                p{
                   color: black;
@@ -139,13 +149,21 @@ const Container = styled.div`
          }
 
          &:hover{
-            h2{
-               color: black;
+
+            .inner-container{
+               opacity: 0.6;
             }
 
             .content{
                background-color: #ed820e;
-               
+
+               h2{
+                  color: black;
+               }
+
+               .text{
+                  color: lightgray;
+               }
             }
          }
       }

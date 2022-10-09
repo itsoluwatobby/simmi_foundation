@@ -35,7 +35,7 @@ const Cards = () => {
                            <p>{card.date}</p>
                         </div>
                      </div>
-                     <p>
+                     <p className='text'>
                         {card.text}
                      </p>
                   </div>
@@ -65,7 +65,7 @@ const Container = styled.div`
    background-color: #333;
 
    h1{
-      font-size: 56px;
+      font-size: 52px;
       font-weight: 200;
       color: orangered;
       text-align: center;
@@ -99,10 +99,12 @@ const Container = styled.div`
             img{
                width: 100%;
                height: 100%;
+               object-fit: cover;
             }
          }
 
          .content{
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify: space-between;
@@ -145,11 +147,25 @@ const Container = styled.div`
             }
 
             p{
-               color: gray;
+               color: rgba(0,0,0,0.95);
                font-weight: 200;
                font-family: Poppins, sans;
                display: block;
                line-height: 1.2rem;
+            }
+
+            .text{
+               color: black;
+               transition: all 0.3s ease-in;
+
+               &:hover{
+                  padding: 10px;
+                  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+                  color: white;
+                  background-color: rgba(0,0,0,0.75);
+                  border-radius: 10px;
+                  line-height: 1.3rem;
+               }
             }
          }
 
