@@ -1,6 +1,7 @@
-export const navbar = ['Home', 'About', 'Donate', 'Blog', 'Gallery', 'Volunteer', 'Events', 'Career', 'Contact'];
+//HEADER
+export const header = ['Home', 'About', 'Donate', 'Blog', 'Gallery', 'Volunteer', 'Events', 'Career', 'Contact'];
 
-
+//TAGS
 export const data = [
    {
       num: 10,
@@ -54,6 +55,7 @@ export const objectives = [
    }
 ]
 
+//UPCOMING EVENTS
 export const cardData = [
    {
       title: 'Marathon Event',
@@ -137,7 +139,7 @@ export const cardData = [
    }
 ]
 
-//FUND RAISING
+//FUNDRAISING
 export const fundRaise = [
    {
       title: 'Marathon Event',
@@ -173,7 +175,7 @@ export const fundRaise = [
    }
 ]
 
-//FUND RAISING
+//OUR SPEAKERS
 export const speakers = [
    {
       title: 'Mohit Chillar',
@@ -221,7 +223,7 @@ export const speakers = [
    }
 ]
 
-//Partners
+//OUR PARTNERS
 export const partners = [
    {
       title: 'Amity University',
