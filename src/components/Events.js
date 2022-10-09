@@ -6,9 +6,7 @@ import { GrMapLocation } from 'react-icons/gr';
 import { MdOutlineDateRange } from 'react-icons/md';
 import { cardData } from '../data/titleData';
 
-const Cards = () => {
-
-
+const Events = () => {
 
    let content = (
       <Container>
@@ -53,7 +51,7 @@ const Cards = () => {
   return content; 
 }
 
-export default Cards;
+export default Events;
 
 const Container = styled.div`
    display: flex;

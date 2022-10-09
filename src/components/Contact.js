@@ -4,7 +4,7 @@ import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { HiPhone } from 'react-icons/hi';
 import { ImHeart } from 'react-icons/im';
 
-const Footer = () => {
+const Contact = () => {
 
   let date = new Date()
   return (
@@ -76,7 +76,7 @@ const Footer = () => {
   );
 }
 
-export default Footer;
+export default Contact;
 
 const Container = styled.div`
   background-color: #333;

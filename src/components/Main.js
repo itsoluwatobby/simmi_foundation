@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Middle from './Middle';
 import Top from './Top';
-import Base from './Base';
-import Cards from './Cards';
+import Donate from './Donate';
+import Events from './Events';
 import FundRaise from './FundRaise';
 
 const Main = () => {
@@ -11,8 +11,8 @@ const Main = () => {
     <Container>
       <Top />
       <Middle />
-      <Base />
-      <Cards />
+      <Donate />
+      <Events />
       <FundRaise />
     </Container>
   );

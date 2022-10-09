@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 import styled from 'styled-components';
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <Navbar />
       <Main />
-      <Footer />
+      <Contact />
     </Container>
   );
 }

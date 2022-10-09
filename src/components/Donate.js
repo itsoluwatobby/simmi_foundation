@@ -2,7 +2,7 @@ import React from 'react';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import styled from 'styled-components';
 
-const Base = () => {
+const Donate = () => {
   return (
     <Container>
       <div className='title'>
@@ -55,7 +55,7 @@ const Base = () => {
   );
 }
 
-export default Base;
+export default Donate;
 
 const Container = styled.div`
    background: url('http://femgineer.com/wp-content/uploads/2014/06/help.jpg');
