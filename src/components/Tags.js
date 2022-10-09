@@ -1,14 +1,23 @@
+//import { useState } from 'react';
 import styled from 'styled-components';
 import {data} from '../data/titleData';
 
 const Tags = () => {
+   // const [nums, setNums] = useState(1);
+
+   // const increase = setTimeout(() => {
+   //    setNums(prev => prev + 1)
+   // }, 200);
+
+   // nums >= 20 && clearTimeout(increase)
+
   return (
     <Container>
          <div className='rule'></div>
          <div className="container">
             {data.map((cap, index) => (
                <div key={index} className="box" style={{backgroundColor: cap.color}}>
-                  <h2>{cap.num}</h2>
+                  <h2>{cap.num} +</h2>
                   <p>{cap.name}</p>
                </div>
                ))
@@ -42,12 +51,12 @@ const Container = styled.div`
          box-shadow: -2px 4px 16px rgba(0,0,0,0.3);
          cursor: pointer;
 
-
          h2{
             color: white;
          }
          p{
             font-size: 22px;
+            font-weight: 500;
             text-transform: uppercase;
          }
 

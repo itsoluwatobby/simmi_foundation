@@ -12,42 +12,41 @@ const Cards = () => {
 
    let content = (
       <Container>
-      <h1>Current and Upcoming events</h1>
-      <div className="container">
-         {cardData.map((card, index) => (
-            <div key={index} className="outer-container">
-               <div className="inner-container">
-                  <img src={card.image} alt={card.title}/>
-               </div>
-               <div className='content'>
-                  <h2>{card.title}</h2>
-                  <div className="location">
-                     <GrMapLocation className='iconic'/>
-                     <p>{card.location}</p>
+         <h1>Current and Upcoming events</h1>
+         <div className="container">
+            {cardData.map((card, index) => (
+               <div key={index} className="outer-container">
+                  <div className="inner-container">
+                     <img src={card.image} alt={card.title}/>
                   </div>
-                  <div className="time-date">
-                     <div className="clock">
-                        <FaClock style={{color: '#ed820e'}}/>
-                        <p>{card.clock}</p>
+                  <div className='content'>
+                     <h2>{card.title}</h2>
+                     <div className="location">
+                        <GrMapLocation className='iconic'/>
+                        <p>{card.location}</p>
                      </div>
-                     <div className="clock">
-                        <MdOutlineDateRange style={{color: '#ed820e'}}/>
-                        <p>{card.date}</p>
+                     <div className="time-date">
+                        <div className="clock">
+                           <FaClock style={{color: '#ed820e'}}/>
+                           <p>{card.clock}</p>
+                        </div>
+                        <div className="clock">
+                           <MdOutlineDateRange style={{color: '#ed820e'}}/>
+                           <p>{card.date}</p>
+                        </div>
                      </div>
+                     <p>
+                        {card.text}
+                     </p>
                   </div>
-                  <p>
-                     {card.text}
-                  </p>
+                  <div className="link">
+                     <p>Read more</p>
+                     <IoIosArrowForward className='arrow'/>
+                  </div>
                </div>
-               <div className="link">
-                  <p>{card.read}</p>
-                  <IoIosArrowForward className='arrow'/>
-               </div>
-            </div>
-            )
-            )} 
-      </div>
-      <hr /> 
+               )
+               )} 
+         </div>
     </Container>
    )
 
@@ -62,6 +61,7 @@ const Container = styled.div`
    align-items: center;
    justify-content: space-between;
    gap: 4rem;
+   padding-bottom: 1.5rem;
    background-color: #333;
 
    h1{

@@ -159,6 +159,7 @@ const Container = styled.div`
             width: 100vw;
             top: 60px;
             left: 0;
+            z-index: 20;
             padding: 10px 0;
             background-color: #333;
             transition: all 0.15s ease-in-out;

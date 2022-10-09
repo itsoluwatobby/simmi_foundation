@@ -3,29 +3,54 @@ export const navbar = ['Home', 'About', 'Donate', 'Blog', 'Gallery', 'Volunteer'
 
 export const data = [
    {
-      num: '10 +',
+      num: 10,
       color: 'orangered',
       name: 'countries'
    },
    {
-      num: '150 +',
+      num: 150,
       color: '#e69b00',
       name: 'projects'
    },
    {
-      num: '10000 +',
+      num: 10000,
       color: '#e69b00',
       name: 'volunteers'
    },
    {
-      num: '20 +',
+      num: 20,
       color: '#ed820e',
       name: 'states'
    },
    {
-      num: '500000 +',
+      num: 500000,
       color: 'orangered',
       name: 'beneficiaries'
+   }
+]
+
+
+//OBJECTIVES
+export const objectives = [
+   {
+      images: "https://simmifoundation.org/home/images/objectives/education.jpg",
+      title: "Education",
+      text: "We provide free academic education, scholarship, training and other incentives to the children."
+   },
+   {
+      images: "https://simmifoundation.org/home/images/objectives/livelihood.jpg",
+      title: "Livelihood",
+      text: "We implement various schemes to provide livelihood and uplift the poor in society"
+   },
+   {
+      images: "https://simmifoundation.org/home/images/objectives/healthcare.jpg",
+      title: "Healthcare",
+      text: " We are increasing awareness on Sanitization and providing people with access to better nutrition, clean water and toilets."
+   },
+   {
+      images: "https://simmifoundation.org/home/images/objectives/women%20empowerment.jpg",
+      title: "Women and Youth Empowerment",
+      text: "We focus on providing equal opportunities for women in the work field."
    }
 ]
 
@@ -36,8 +61,7 @@ export const cardData = [
       location: "Delhi",
       clock: "22:25:00 - 23:25:00",
       date: "2021-07-09",
-      text: "Lorem Ipsum generator a baeeLorem Ipsum generator a baee Lorem Ipsum generator a baee Lorem Ipsum generator a baee Lorem Ipsum generator a baee",
-      read: "Read more"
+      text: "Lorem Ipsum generator a baeeLorem Ipsum generator a baee Lorem Ipsum generator a baee Lorem Ipsum generator a baee Lorem Ipsum generator a baee"     
    },
    { 
       title: 'event til',
@@ -45,8 +69,7 @@ export const cardData = [
       location: 'India',
       clock: "02:13:00 - 02:43:00",
       date: "2021-06-30",
-      text: "event-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-desc",
-      read: "Read more"
+      text: "event-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-descevent-desc"      
    },
    { 
       title: '"Know your heart better" By Dr.Rahul Katariya',
@@ -54,8 +77,7 @@ export const cardData = [
       location: "India",
       clock: "16:00:00 - 17:00:00",
       date: "021-12-13",
-      text: '"Know your heart better" Catch Dr. Rahul Katariya speak live on the topic cardiac pain on SIMMI foundations official instagram handle. Link : https://instagram.com/simmifoundation/ #simmifounda',
-      read: "Read more"
+      text: '"Know your heart better" Catch Dr. Rahul Katariya speak live on the topic cardiac pain on SIMMI foundations official instagram handle. Link : https://instagram.com/simmifoundation/ #simmifoundation'      
    },
    { 
       title: 'Corornavirus and the country',
@@ -63,8 +85,7 @@ export const cardData = [
       location: "Instagram",
       clock: "15:00:00 - 15:30:00",
       date: "2022-01-17",
-      text: "The SIMMI FOUNDATION introduces Dr. Arnab Mandal! Dr. Mandal is an MBBS gold-medal list from RG Kar Medical College and is currently working as a house physician at the department of pediatrics in RG",
-      read: "Read more"
+      text: "The SIMMI FOUNDATION introduces Dr. Arnab Mandal! Dr. Mandal is an MBBS gold-medal list from RG Kar Medical College and is currently working as a house physician at the department of pediatrics in RG"     
    },
    { 
       title: 'Development and empowerment',
@@ -72,8 +93,7 @@ export const cardData = [
       location: "Instagram",
       clock: "16:00:00 - 16:30:00",
       date: "2021-01-18",
-      text: "Ms. Poonam Shroti addresses the unaddressed topic of disability and women empowerment, and the true face of rural development in the country",
-      read: "Read more"
+      text: "Ms. Poonam Shroti addresses the unaddressed topic of disability and women empowerment, and the true face of rural development in the country"      
    },
    { 
       title: 'Wellness and health, a vital concept',
@@ -81,8 +101,7 @@ export const cardData = [
       location: "Google Meet",
       clock: "18:00:00 - 18:30:00",
       date: "2022-01-19",
-      text: "Ms. Lade talks about the issues of liver disease and how Ayurveda can help in solving the modern problems of today",
-      read: "Read more"
+      text: "Ms. Lade talks about the issues of liver disease and how Ayurveda can help in solving the modern problems of today"     
    },
    { 
       title: 'Mental Health and Motivation',
@@ -90,8 +109,7 @@ export const cardData = [
       location: "Instagram",
       clock: "15:00:00 - 15:30:00",
       date: "2022-01-21",
-      text: "Ms. Papiya talks about mental health and the stigma around it, and how to overcome difficulties in talking about it and treating it.",
-      read: "Read more"
+      text: "Ms. Papiya talks about mental health and the stigma around it, and how to overcome difficulties in talking about it and treating it."     
    },
    { 
       title: 'Rural Development',
@@ -99,8 +117,7 @@ export const cardData = [
       location: "Instagram",
       clock: "16:00:00 - 16:31:00",
       date: "2022-01-21",
-      text: "Mr. Dushyant talks about rural development, especially infrastructure and roadways",
-      read: "Read more"
+      text: "Mr. Dushyant talks about rural development, especially infrastructure and roadways"    
    },
    { 
       title: 'Understanding Archeology',
@@ -108,8 +125,7 @@ export const cardData = [
       location: "Google Meet",
       clock: "12:00:00 - 12:30:00",
       date: "2021-07-09",
-      text: "we dive with Ms. Neha into the field of archeology, as she explains the basics of archeology and the inner workings of libraries",
-      read: "Read more"
+      text: "we dive with Ms. Neha into the field of archeology, as she explains the basics of archeology and the inner workings of libraries"   
    },
    { 
       title: 'Understanding Entrepreneurship',
@@ -117,8 +133,7 @@ export const cardData = [
       location: "Instagram",
       clock: "18:00:00 - 18:30:00",
       date: "2022-01-22",
-      text: 'Mr. Amman Khurana talks about his journey as an entrepreneur and how he became the "ultimate life coach"',
-      read: "Read more"
+      text: 'Mr. Amman Khurana talks about his journey as an entrepreneur and how he became the "ultimate life coach"'
    }
 ]
 
@@ -130,7 +145,7 @@ export const fundRaise = [
       amount: "15000 raised of 30000",
       rating: '250px',
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Sit amet consectetur adipiscing elit duis tristique",
-      read: "Read more"
+
    },
    { 
       title: 'Kavach Initiative',
@@ -138,7 +153,7 @@ export const fundRaise = [
       amount: "21000 raised of 150000",
       rating: '180px',
       text: "Simmi Foundation has taken an initiative Kavach to donate shield masks to the workers who put their lives at risk daily. Let's make a change during this lockdown Let's make a change during this lockdown to help these workers who do not have the luxury to",
-      read: "Read more"
+
    },
    { 
       title: 'Donating Clothes',
@@ -146,7 +161,7 @@ export const fundRaise = [
       amount: "10000 raised of 100000",
       rating: '100px',
       text: 'SIMMI FOUNDATION Donated Clothes and blankets to almost 4500 Underprivileged people. As we know how how important is clothes at this winter time, Hence SIMMI Foundation appeal you all to help us in this drive by donating the much you could have.',
-      read: "Read more"
+
    },
    { 
       title: 'Education',
@@ -154,7 +169,7 @@ export const fundRaise = [
       amount: "10000 raised of 500000",
       rating: '50px',
       text: "Smart India Multi Management Institute (SIMMI) Foundation working dedicatedly in providing education to underprivileged poor children free of cost. Meanwhile post covid situation our team working on giving Chaupal Classes and almost motivated almost 4500+",
-      read: "Read more"
+
    }
 ]
 

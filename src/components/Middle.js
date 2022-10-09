@@ -1,75 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import { IoMdArrowRoundForward } from 'react-icons/io';
+import { objectives } from '../data/titleData';
 
 const Middle = () => {
   return (
     <Container>
       <h1>Objectives</h1>
       <div className="container">
-         <div className="outer-container">
-            <div className="inner-container">
-               <img src="https://simmifoundation.org/home/images/objectives/education.jpg" alt="children"/>
-            </div>
-            <div className='content'>
-               <h2>Education</h2>
-               <p>
-                  We provide free academic education, scholarship, training and other incentives to the children.
-               </p>
-               <div className="link">
-                  <p>Read more</p>
-                  <IoMdArrowRoundForward />
+         {objectives.map((obj, index) => (
+               <div key={index} className="outer-container">
+                  <div className="inner-container">
+                     <img src={obj.images}alt={obj.title}/>
+                  </div>
+                  <div className='content'>
+                     <h2>{obj.title}</h2>
+                     <p>{obj.text}</p>
+                     <div className="link">
+                        <p>Read more</p>
+                        <IoMdArrowRoundForward />
+                     </div>
+                  </div>
                </div>
-            </div>
-         </div>
-
-         <div className="outer-container">
-            <div className="inner-container">
-               <img src="https://simmifoundation.org/home/images/objectives/livelihood.jpg" alt="livelihood"/>
-            </div>
-            <div className='content'>
-               <h2>Livelihood</h2>
-               <p>
-                  We implement various schemes to provide livelihood and uplift the poor in society.
-               </p>
-               <div className="link">
-                  <p>Read more</p>
-                  <IoMdArrowRoundForward />
-               </div>
-            </div>
-         </div>
-
-         <div className="outer-container">
-            <div className="inner-container">
-               <img src="https://simmifoundation.org/home/images/objectives/healthcare.jpg" alt="health"/>
-            </div>
-            <div className='content'>
-               <h2>Healthcare</h2>
-               <p>
-                  We are increasing awareness on Sanitization and providing people with access to better nutrition, clean water and toilets.
-               </p>
-               <div className="link">
-                  <p>Read more</p>
-                  <IoMdArrowRoundForward />
-               </div>
-            </div>
-         </div>
-
-         <div className="outer-container">
-            <div className="inner-container">
-               <img src="https://simmifoundation.org/home/images/objectives/women%20empowerment.jpg" alt="empowerment"/>
-            </div>
-            <div className='content'>
-               <h2>Women and Youth Empowerment</h2>
-               <p>
-                  We focus on providing equal opportunities for women in the work field.
-               </p>
-               <div className="link">
-                  <p>Read more</p>
-                  <IoMdArrowRoundForward />
-               </div>
-            </div>
-         </div>
+            ))
+         }
       </div>   
     </Container>
   );
@@ -102,7 +56,7 @@ const Container = styled.div`
          flex-direction: column;
          justify-content: space-between;
          align-items: center;
-         width: 250px;
+         width: 260px;
          height: 400px;
          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 
@@ -120,6 +74,7 @@ const Container = styled.div`
                width: 100%;
                height: 100%;
                object-fit: cover;
+               object-position: center;
             }
 
             &:hover{
@@ -131,7 +86,7 @@ const Container = styled.div`
             display: flex;
             flex-direction: column;
             justify: space-between;
-            gap: 2rem;
+            gap: 1.5rem;
             align-items: center;
             padding: 2rem;
 
@@ -139,6 +94,7 @@ const Container = styled.div`
                font-size: 16px;
                color: #ed820e;
                display: block;
+               text-align: center;
 
                @media (max-width: 1124px){
                   font-size: 20px;
@@ -175,6 +131,10 @@ const Container = styled.div`
                      color: blue;
                   }
                }
+            }
+
+            @media (min-width: 1100px){
+               padding: 1.5rem;
             }
          }
 

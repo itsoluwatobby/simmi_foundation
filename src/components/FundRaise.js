@@ -28,7 +28,7 @@ const FundRaise = () => {
                      <div className='rating' style={{width: fund.rating}}></div>
                   </div>
                   <div className="link">
-                     <p>{fund.read}</p>
+                     <p>Read more</p>
                      <IoIosArrowForward className='arrow'/>
                   </div>
                </div>
