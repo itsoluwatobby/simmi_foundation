@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { navbar } from '../data/titleData';
+import { header } from '../data/titleData';
 
 const Header = () => {
    const [show, setShow] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
             <div className="name"><a href='/#'>SIMMI FOUNDATION</a></div>
          </div>
          <ul className={`pages ${show ? 'display' : ''}`}>
-            {navbar.map((pages, index) => (
+            {header.map((pages, index) => (
                   <li className="address" key={index} style={{cursor: 'pointer'}}>
                      {pages}</li>
                ))
